@@ -1,12 +1,12 @@
 # Мобильное приложение для обучения футбольным финтам на Cordova <br/><br/> Mobile application for teaching football tricks using Cordova
 <img src="/imgs/im6.png" width="800"/>
 
-*01.01.2016 - 01.07.2017*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
+*01.07.2017 - 01.03.2018*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
 
 *Команда/Team*
-1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human) (16 y.o. hardware, software, manager)
-2. Егор Василенко (15 y.o. mobile programmer)
-3. Михаил Онегин (15 y.o. 3D-designer)
+1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human) (16 y.o. developer, designer, video editor)
+2. Антон Пилипенко (16 y.o. promotion, financier, actor)
+3. Александр Плужников (16 y.o. actor)
 <br/>
 
 Разработка велась 
