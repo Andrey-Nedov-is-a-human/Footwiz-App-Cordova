@@ -1,5 +1,5 @@
 # Мобильное приложение для обучения футбольным финтам на Cordova <br/><br/> Mobile application for teaching football tricks using Cordova
-<img src="/imgs/img1.png" width="800"/>
+<img src="/imgs/img1.png" width="500"/>
 
 *01.07.2017 - 01.03.2018*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
 
