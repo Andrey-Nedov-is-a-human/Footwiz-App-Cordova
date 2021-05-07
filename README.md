@@ -4,8 +4,9 @@
 *01.07.2017 - 01.03.2018*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
 
 *Разработчик/Developer*
-1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human) (16 y.o. developer, designer, video editing)
-2. Антон Пилипенко (16 y.o. developer, designer, video editing)
+1. [Андрей Недов](https://github.com/Andrey-Nedov-is-a-human) (16 y.o. developer, designer, video editor)
+2. Антон Пилипенко (16 y.o. promotion, financier, actor)
+3. Александр Плужников (16 y.o. actor)
 <br/>
 
 Приложение является учебным пособием для начинающих футболистов. Оно содержит в себе коллекцию футбольних финтов с пошаговой инструкцией к их выполнению, а так же видеозаписями 
