@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body onload="onLoad()">
+
+        <div id="page" style="margin-top:0vh; margin-left:0vw;height:100vh;width:100vw; position:absolute; display:none; overflow-y:auto">
+
+            <button class="panelfon" style="z-index:2; position:absolute"></button>
+
+            <div id="back2" style="position:absolute; margin-top:0vh; margin-left:0vw; height:18vw; width:100vw; z-index:3; display:block">
+
+                <button class="fbut" style="background-image:url('img/Back.png'); margin-left:4vw" onclick="back2()"></button>
+
+                <button id="laterbut" class="fbut" style="background-image:url('img/laterbut.png'); margin-left:60vw" onclick="golater()"></button>
+
+                <button id="donebut" class="fbut" style="background-image:url('img/donebut.png'); margin-left:80vw" onclick="godone()"></button>
+
+            </div>
+
+            <div style="margin-top:0vh;margin-left:0vw;height:82vw;width:100vw">
+
+                <iframe id="frame" src="fints/1/ball roll back/index.html" style="margin-top:0vh;margin-left:0vw;height:100vh;width:100vw;position:absolute" frameborder="0" scrolling="no"></iframe>
+
+            </div>
+
+        </div>
+
+        <div id="lanset" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; display:none; overflow:none; position:absolute;z-index:10">
+            <button class="lansetp1" onclick="russian()">english</button>
+            <button class="lansetp" onclick="english()">русский</button>
+            <button class="blackfon"></button>
+        </div>
+
+        <div id="lanset2" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; display:none; overflow:none; position:absolute;z-index:10">
+            <button class="lansetp1" onclick="russian1()">english</button>
+            <button class="lansetp" onclick="english1()">русский</button>
+            <button class="redfon"></button>
+        </div>
+
+        <div id="cllat" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; display:none; overflow:none; position:absolute;z-index:10">
+            <button class="yes" onclick="yes1()"></button>
+            <button class="no" onclick="no1()"></button>
+            <button class="redfon"></button>
+        </div>
+
+        <div id="cldon" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; display:none; overflow:none; position:absolute;z-index:10">
+            <button class="yes" onclick="yes2()"></button>
+            <button class="no" onclick="no2()"></button>
+            <button class="redfon"></button>
+        </div> 
+
+        
+
+        <div id="main" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; display:none; overflow:none;z-index:2"> <!-- Главный div -->
+
+            <button class="panelfon" style="z-index:3; position:absolute"></button>
+
+            <div id="fbut" style="position:absolute; margin-top:0vh; margin-left:0vw; height:18vw; width:100vw; z-index:3">
+
+                        <button id="abut" class="fbut" style="background-image:url('img/ActionZ.png'); margin-left:5.6vw" onclick="toaction()"></button>
+
+                        <button id="lbut" class="fbut" style="background-image:url('img/Later.png'); margin-left:29.2vw" onclick="tolater()"></button>
+
+                        <button id="dbut" class="fbut" style="background-image:url('img/Done.png'); margin-left:52.8vw" onclick="todone()"></button>
+
+                        <button id="sbut" class="fbut" style="background-image:url('img/Setting.png'); margin-left:76.4vw" onclick="tosetting()"></button>
+
+            </div>
+            
+            <div style="z-index:2">
+                <button id="mini" class="name"></button><!--сложность-->
+            </div>
+
+            <div id="action" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll; z-index:1;position:absolute"> <!--список уровней-->
+                
+                <button id="novich" class="list1" onclick="q()"><!--<img src="img/Star.png" style="margin-left:10%; height:25%">--></button><!--новичок-->
+
+                <button id="lubitel" class="list" onclick="w()"><!--<img src="img/5.png" class="image">--></button><!--любитель-->
+
+                <button id="prodv" class="list" onclick="e()"></button><!--продвинутый-->
+
+                <button id="opyt" class="list" onclick="r()"></button><!--опытный-->
+
+                <button id="profess" class="list" onclick="t()"></button><!--профессионал-->
+
+                <button class="invis"></button>
+
+            </div>
+
+            <div id="later" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"><!--отложенное-->
+            </div>
+
+            <div id="done" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"><!--выполнено-->
+
+            </div>
+
+            <div id="setting" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"> <!--настройки-->
+
+            <button class="invis2"></button>
+
+            <button id="lang" class="set1" onclick="lan()"></button><!---->
+            <button id="clearl" class="set" onclick="clearl()">очистить раздел отложенное</button><!---->
+            <button id="cleard" class="set" onclick="cleard()">очистить раздел освоенные</button><!---->
+
+            <button class="invis"></button>
+
+            </div>
+
+            <div id="back" style="position:absolute; margin-top:0vh; margin-left:0vw; height:18vw; width:100vw; z-index:3; display:none"> <!--назад-->
+
+                        <button class="fbut" style="background-image:url('img/Back.png'); margin-left:4vw" onclick="back()"></button>
+
+            </div>
+
+            <div id="nov" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"><!--новичок-->
+
+                <button class="list1" onclick="stepOver2()">step over 1</button>
+
+                <button class="list" onclick="stepOver()">step over 2</button>
+
+                <button class="list" onclick="ballRoll()">ball roll</button>
+
+                <button class="list" onclick="ballRollBack()">ball roll back</button>
+
+                <button class="list" onclick="doubleTouchExit()">double touch exit</button>
+
+                <button class="invis"></button>
+
+            </div>
+
+            <div id="lub" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"><!--новичок-->
+
+
+                <button class="list1" onclick="fakeRabona()">fake rabona</button>
+
+                <button class="list" onclick="heelFlick()">heel flick</button>
+
+                <button class="list" onclick="heelFlickTurn()">heel flick turn</button>
+
+                <button class="list" onclick="mcGeadySpin()">mc geady spin</button>
+
+                <button class="list" onclick="roulette()">roulette</button>
+
+                <button class="list" onclick="simpleRainbow()">simple rainbow</button>
+
+                <button class="list" onclick="stepOverVariation()">step over variation</button>
+
+                <button class="list" onclick="vMoveTurn()">V-move turn</button>
+
+                <button class="invis"></button>
+
+            </div>
+
+            <div id="pro" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"><!--новичок-->
+
+
+                <button class="list1" onclick="fakePass()">fake pass</button>
+
+                <button class="list" onclick="heelToHeelExit()">heel to heel exit</button>
+
+                <button class="list" onclick="hocusPocus()">hocus pocus</button>
+
+                <button class="list" onclick="rabonaExit()">rabona exit</button>
+
+                <button class="list" onclick="rouletteExit()">roulette exit</button>
+
+                <button class="list" onclick="spinRoll()">spin roll</button>
+
+                <button class="list" onclick="theSonicTurn()">the sonic turn</button>
+
+                <button class="list" onclick="uTurn()">U-turn</button>
+
+                <button class="invis"></button>
+
+            </div>
+
+            <div id="op" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"><!--новичок-->
+
+
+                <button class="list1" onclick="advancedRainbow()">advanced rainbow</button>
+
+                <button class="list" onclick="crossoverDtExit()">crossover DT exit</button>
+
+                <button class="list" onclick="doubleStepOver()">double step over</button>
+
+                <button class="list" onclick="elastico()">elastico</button>
+
+                <button class="list" onclick="rabonaBallRoll()">rabona ball roll</button>
+
+                <button class="list" onclick="spinFlick()">spin flick</button>
+
+                <button class="list" onclick="uTurnVariation()">U-turn variation</button>
+
+                <button class="invis"></button>
+
+            </div>
+
+            <div id="prof" style="margin-top:0vh; margin-left:0vw; height:100vh; width:100vw; overflow-y: scroll;position:absolute;display:none;"><!--новичок-->
+
+
+                <button class="list1" onclick="alternateElastico()">alternate elastico</button>
+
+                <button class="list" onclick="doubleAirAkka()">double air akka</button>
+
+                <button class="list" onclick="fullRainbow()">full rainbow</button>
+
+                <button class="list" onclick="pannaVariation()">panna variation</button>
+
+                <button class="list" onclick="scoopRoulette()">scoop roulette</button>
+
+                <button class="list" onclick="seanAirAkka()">Sean air akka</button>
+
+                <button class="list" onclick="seanVMovePanna()">Sean V-move panna</button>
+
+                <button class="invis"></button>
+
+            </div>
+
+
+        </div>
+
+        <div id="nach" style="display:block;">             
+            <video id="anim" style="margin-top:10vh;margin-left:0vw;width:100vw;z-index:1;position:absolute;z-index:2" poster="img/star.png" muted onended="start()">
+                <source src="img/logoanim.mp4" type="video/mp4">
+            </video>
+            <button class="fon"></button>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
