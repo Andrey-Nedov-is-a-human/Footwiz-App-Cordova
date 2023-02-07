@@ -3,7 +3,7 @@
 
 *01.07.2017 - 01.03.2018*  [![Generic badge](https://img.shields.io/badge/Status-Closed-red.svg)](https://shields.io/)<br/>
 
-*Team*
+*Team* 
 1. [Andrey Nedov](https://github.com/Andrey-Nedov-is-a-human) (16 y.o. developer, designer, video editor)
 2. Anton Pilipenko (16 y.o. promotion, financier, actor)
 3. Alexander Pluzhnikov (16 y.o. actor)
